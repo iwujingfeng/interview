@@ -1,7 +1,7 @@
 {
-  "name": "The-Secret-of-the-Front-End",
+  "name": "interview",
   "version": "1.0.0",
-  "description": "the secret of the front-end",
+  "description": "interview",
   "directories": {
     "doc": "doc"
   },
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iwujingfeng/The-Secret-of-the-Front-End.git"
+    "url": "git+https://github.com/iwujingfeng/interview.git"
   },
   "keywords": [
     "vue",
@@ -21,9 +21,9 @@
   "author": "iwujingfeng",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/iwujingfeng/The-Secret-of-the-Front-End/issues"
+    "url": "https://github.com/iwujingfeng/interview/issues"
   },
-  "homepage": "https://github.com/iwujingfeng/The-Secret-of-the-Front-End#readme",
+  "homepage": "https://github.com/iwujingfeng/interview#readme",
   "devDependencies": {
     "vuepress": "^0.14.10"
   }
