@@ -1,0 +1,61 @@
+<!DOCTYPY html>
+    <html>
+
+    <head>
+        <title>reactivity</title>
+    </head>
+
+    <body>
+        <span></span>
+        <script>
+            {
+                let a = 5;
+                let b = a * 10;
+                console.log(b)
+                a = 10
+                console.log(b)
+                b = a * 10; // 必须重新计算 才能更新 b
+                console.log(b)
+            }
+
+            {
+                function b(a) {
+                    return a * 10
+                }
+                let a = 5;
+                console.log(b(a))
+                a = 10
+                console.log(b(a))
+            }
+
+            {
+                let state = {
+                    a: 5
+                }
+                // document.querySelector('span').textContent = state.a * 10
+                // console.log(document.querySelector('span').textContent)
+
+                function convert(state) {
+                    for (key in state) {
+                        let value = state[key]
+                        console.log(value)
+                        Object.defineProperty(state, key, {
+                            get: function () {
+                                return value
+                            },
+                            set: function (newVal) {
+                                value = newVal
+                                console.log(value)
+                            }
+                        })
+                    }
+                }
+
+                convert(state)
+                state.a = 300
+                state.a
+            }
+        </script>
+    </body>
+
+    </html>

@@ -1,0 +1,29 @@
+<!DOCTYPY html>
+    <html lang="en">
+
+    <head>
+        <title>module</title>
+    </head>
+
+    <body>
+        <script src="module_1.js"></script>
+        <script src="module_2.js"></script>
+
+        <script>
+            console.log('模块一：', moduleOne) // 模块二使用和模块一同名的变量，覆盖了模块一的内容
+            console.log('模块二：', window.moduleTwo) // 这是模块二的内容
+
+            // 模块内容用函数包裹后
+            console.log('模块一 函数：', moduleOneWrap().newModuleOne) // 用函数包裹的模块一的内容
+            console.log('模块二 函数：', moduleTwoWrap().newModuleTwo) // 用函数包裹的模块二的内容
+
+            // 使用对象
+            console.log('模块一 对象：', moduleOneObj.newModuleOne) // 用作为对象属性的模块一的内容
+            console.log('模块二 对象：', moduleTwoObj.newModuleTwo) // 作为对象属性的模块二的内容
+
+            console.log('模块一 立即执行函数：', moduleOne.newModuleOne) // 立即执行函数包裹的模块一的内容
+            console.log('模块二 立即执行函数：', moduleTwo.newModuleTwo) // 立即执行函数包裹的模块二的内容
+        </script>
+    </body>
+
+    </html>

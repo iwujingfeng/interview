@@ -19,6 +19,10 @@
 
 // 类型
 // 事件
+// DOM对象:
+// Event对象:clientX clientY screenX screenY layerX layerY offsetX offsetY pageX pageY
+// https://www.cnblogs.com/itjeff/p/4086682.html
+// Element对象:element.clientHeight element.clientWidth element.offsetHeight element.offsetWidth element.offsetLeft element.offsetTop element.offsetParent element.scrollHeight element.scrollWidth element.scrollLeft element.scrollTop 
 // 错误处理
 // 定时器
 // JSON
@@ -33,10 +37,11 @@
 // 原型
 // 行为委托
 // 构造函数与 new 运算符
-// 异步与事件循环
+// 异步编程
+// 事件循环
 // 解构赋值
 // Set与 Map
-// 模块
+// 模块 2019.5.2
 // 防抖与节流
 // 柯里化
 // 运算符
