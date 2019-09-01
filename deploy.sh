@@ -4,7 +4,7 @@ cd docs/.vuepress/dist
 git init
 git add -A
 git commit -m 'deploy'
-git push -f git@github.com:iwujingfeng/The-Secret-of-the-Front-End.git master:gh-pages
+git push -f git@github.com:iwujingfeng/interview.git master:gh-pages
 cd -
 # 如果发布到 https://<USERNAME>.github.io
 # git push -f git@github.com:iwujingfeng/iwujingfeng.github.io.git master
